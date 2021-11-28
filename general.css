@@ -1,0 +1,46 @@
+/* General */
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.center {
+    padding: 0 70px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    bottom 50%
+}
+
+/* Nav */
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    padding: 10px 70px;
+    width: 100vw;
+    z-index: 4;
+}
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.title {
+    font-weight: bold;
+    color: black;
+}
