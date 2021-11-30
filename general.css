@@ -123,7 +123,7 @@ a, a:hover {
 /* Section 6 */
 
 .section-div6 {
-    background-color: #D7E9F7;
+    background-color: #BEAEE2;
     display: flex;
     padding: 100px 0;
 }
@@ -139,7 +139,7 @@ a, a:hover {
 /* Section 3 */
 
 .section-div3 {
-    background-color: #FFC286;
+    background-color: #ED8E7C;
     display: flex;
     padding: 100px 0;
 }
@@ -190,9 +190,9 @@ a, a:hover {
 @keyframes jump {
     0%{top:0px}
     40%{top:0px}
-    43%{top:-10px}
+    43%{top:-20px}
     46%{top:0px}
-    48%{top:-6px}
+    48%{top:-12px}
     50%{top:0px}
     100%{top:0px;}
 }
