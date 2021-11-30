@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+a, a:hover {
+    color: black;
+}
+
 /* Nav */
 
 .container-fluid {
@@ -50,6 +54,24 @@ h1, h2, h3, h4, h5, h6 {
 .title-sub {
     padding-top: 5px;
     padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.scroller-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.scroller-anchor:hover {
+    color: black;
+}
+
+.scroller {
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    padding: 15px;
+    margin-top: -60px;
 }
 
 .title-button {
@@ -74,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FDFF8F;
     display: flex;
     padding: 100px 0;
+    height: calc(100vh - 60px);
 }
 
 /* Section 1 */
@@ -86,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-center1 {
     margin: auto 5vw auto 5vw;
+    margin: auto 70px auto 70px;
 }
 
 /* Section 2 */
@@ -96,10 +120,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0;
 }
 
+/* Section 6 */
+
+.section-div6 {
+    background-color: #D7E9F7;
+    display: flex;
+    padding: 100px 0;
+}
+
+/* Section 5 */
+
+.section-div5 {
+    background-color: #B4FE98;
+    display: flex;
+    padding: 100px 0;
+}
+
 /* Section 3 */
 
 .section-div3 {
-    background-color: #FE9898;
+    background-color: #FFC286;
     display: flex;
     padding: 100px 0;
 }
@@ -108,14 +148,12 @@ h1, h2, h3, h4, h5, h6 {
 
  .footer {
     background-color: #212529;
-    color: #999999;
     display: flex;
     text-align: center;
  }
 
  .footer-content {
     padding: 100px 0;
-    margin: auto 5vw auto 5vw;
     margin: auto;
  }
 
@@ -130,8 +168,31 @@ h1, h2, h3, h4, h5, h6 {
    .mobile-size {
         text-align: center;
    }
+   .section-div4 {
+       height: auto;
+   }
+   .title-sub {
+    font-size: 4vw;
+   }
+   .scroller {
+       display: none;
+   }
 }
 
 .section-center1 {
     width: 100vw;
+}
+
+.jump{
+    animation:jump 4s infinite ease-in-out;
+    position:relative;
+}
+@keyframes jump {
+    0%{top:0px}
+    40%{top:0px}
+    43%{top:-10px}
+    46%{top:0px}
+    48%{top:-6px}
+    50%{top:0px}
+    100%{top:0px;}
 }
