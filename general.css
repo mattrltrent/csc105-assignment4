@@ -97,6 +97,7 @@ a, a:hover {
     display: flex;
     padding: 100px 0;
     height: calc(100vh - 60px);
+    min-height: 468px;
 }
 
 /* Section 1 */
@@ -177,6 +178,12 @@ a, a:hover {
    .scroller {
        display: none;
    }
+   .contact-info {
+    background-color: #A8ECE7;
+    display: flex;
+    height: auto;
+}
+    
 }
 
 .section-center1 {
@@ -196,3 +203,6 @@ a, a:hover {
     50%{top:0px}
     100%{top:0px;}
 }
+
+/* references/contact-info */
+
