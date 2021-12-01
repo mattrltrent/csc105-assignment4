@@ -7,7 +7,7 @@
 body {
     background-color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     color: black;
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ a, a:hover {
     display: flex;
     padding: 100px 0;
     height: calc(100vh - 60px);
-    min-height: 800px;
+    min-height: 456px;
 }
 
 /* Section 1 */
@@ -109,14 +109,13 @@ a, a:hover {
 }
 
 .section-center1 {
-    margin: auto 5vw auto 5vw;
     margin: auto 70px auto 70px;
 }
 
 /* Section 2 */
 
 .section-div2 {
-    background-color: #F4BEEE;
+    background-color: pink;
     display: flex;
     padding: 100px 0;
 }
@@ -165,7 +164,7 @@ a, a:hover {
     color: white;
  }
 
- @media (max-width: 1000px) {
+ @media (max-width: 1020px) {
    .mobile-size {
         text-align: center;
    }
@@ -182,8 +181,10 @@ a, a:hover {
     background-color: #A8ECE7;
     display: flex;
     height: auto;
-}
-    
+    }
+    .hand-img {
+        display: none;
+    }
 }
 
 .section-center1 {
@@ -223,14 +224,55 @@ a, a:hover {
     font-size: 2vw;
 }
 
-.pad-down {
-    /* padding-bottom: 20px; */
+.section-div-header {
+    background-color: #FDFF8F;
+    display: flex;
+    height: calc(100vh);
+    min-height: 456px;
+}
+
+.wrap-up {
+    padding-bottom: 20px;
 }
 
 .hand-img {
-    height: 150px;
-    width: auto;
-    text-align: left;
-    margin-left: -45px;
-    margin-bottom: -20px;
+    height: 30vw;
+    transform: rotate(10deg);
+    position: absolute;
+    margin-top: -7vw;
+    margin-left: 13vw;
 }
+/* 
+.section-div-references {
+    background-color: pink;
+    display: flex;
+    padding: 100px 0;
+    height: calc(100vh - 60px);
+    min-height: 456px;
+    margin: 0 70px;
+} */
+
+.row-references {
+    margin: auto 0;
+    height: calc(100vh - 60px);
+}
+
+.row-head {
+    margin: auto;
+}
+
+.section-center2 {
+    margin: auto;
+    width: 50vw;
+    align-items: center;
+    object-fit: contain;
+}
+
+.section-div4-2 {
+    background-color: pink;
+    display: flex;
+    padding: 100px 0;
+    height: calc(100vh - 60px);
+    min-height: 456px;
+}
+
