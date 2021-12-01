@@ -97,7 +97,7 @@ a, a:hover {
     display: flex;
     padding: 100px 0;
     height: calc(100vh - 60px);
-    min-height: 468px;
+    min-height: 800px;
 }
 
 /* Section 1 */
@@ -206,3 +206,31 @@ a, a:hover {
 
 /* references/contact-info */
 
+.header {
+    font-weight: bold;
+    color: black;
+    font-size: 3vw;
+    /* transform: skewX(-5deg); */
+    font-weight: 900;
+    margin-left: -8px;
+    margin: 25px 0;
+}
+
+.title-sub-features {
+    padding-top: 5px;
+    /* padding-bottom: 15px; */
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.pad-down {
+    /* padding-bottom: 20px; */
+}
+
+.hand-img {
+    height: 150px;
+    width: auto;
+    text-align: left;
+    margin-left: -45px;
+    margin-bottom: -20px;
+}
