@@ -168,9 +168,10 @@ a, a:hover {
    .mobile-size {
         text-align: center;
    }
-   .section-div4 {
+   .section-div4, .section-div-4-proj {
        height: auto;
    }
+   
    .title-sub {
     font-size: 4vw;
    }
@@ -184,6 +185,12 @@ a, a:hover {
     }
     .hand-img {
         display: none;
+    }
+    .header {
+        font-size: 50vw;
+    }
+    .title-sub-features {
+        font-size: 50vw;
     }
 }
 
@@ -276,3 +283,49 @@ a, a:hover {
     min-height: 456px;
 }
 
+.section-div4-proj {
+    background-color: #A8ECE7;
+    display: flex;
+    padding: 100px 0;
+    height: calc(100vh - 60px);
+    min-height: 456px;
+}
+
+.title-proj {
+    font-weight: bold;
+    color: black;
+    font-size: 7vw;
+    /* transform: skewX(-5deg); */
+    font-weight: 900;
+    margin-left: -8px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.section-div6-proj {
+    background-color: #BEAEE2;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.work-img {
+    max-width: 75vw;
+    height: auto;
+    padding-top: 5vw;
+}
+
+.title-sub-proj {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5vw;
+    max-width: 75vw;
+}
