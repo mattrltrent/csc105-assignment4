@@ -315,6 +315,7 @@ a, a:hover {
     display: flex;
 }
 
+
 .work-img {
     max-width: 75vw;
     height: auto;
@@ -327,5 +328,60 @@ a, a:hover {
     font-weight: 600;
     text-align: center;
     padding: 5vw;
-    max-width: 75vw;
+    width: 80vw;
+}
+
+.section-div7-proj {
+    background-color: #FDFF8F;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.bump-down {
+    margin-top: 5vw;
+}
+
+.section-div8-proj {
+    background-color: #A8ECE7;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.section-div9-proj {
+    background-color: pink;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.media-item-map {
+    width: 80vw;
+    height: 60vw;
+}
+
+.media-item-video {
+    width: 80vw;
+    height: 45vw;
+}
+
+td {
+    margin: auto;
+}
+
+
+table {
+    width: 80vw;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
 }
