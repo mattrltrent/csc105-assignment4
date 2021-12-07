@@ -47,6 +47,15 @@ a, a:hover {
     margin: 25px 0;
 }
 
+.title-js {
+    font-weight: bold;
+    color: black;
+    font-size: 7vw;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+
 .title-highlight {
     color: black;
 }
@@ -291,6 +300,14 @@ a, a:hover {
     min-height: 456px;
 }
 
+.section-div4-js {
+    background-color: #BEAEE2;
+    display: flex;
+    padding: 100px 0;
+    height: calc(100vh - 60px);
+    min-height: 456px;
+}
+
 .title-proj {
     font-weight: bold;
     color: black;
@@ -351,6 +368,14 @@ a, a:hover {
     display: flex;
 }
 
+.section-div8-js {
+    background-color: #FDFF8F;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
 .section-div9-proj {
     background-color: pink;
     display: flex;
@@ -384,4 +409,24 @@ table {
 
 .align-right {
     text-align: right;
+}
+
+.container {
+    text-align: center;
+    padding: 20vh 0;
+}
+
+.form-control {
+    text-align: center;
+    width: 40vw;
+    position: relative;
+    margin: 15px auto;
+}
+
+.btn {
+    width: 40vw;
+}
+
+.push-down {
+    margin-bottom: 100px;
 }
