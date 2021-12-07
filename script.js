@@ -22,3 +22,18 @@ function numberCalc() {
     var num = parseInt(document.getElementsByClassName("num-to-increase")[0].innerHTML) + 1;
     document.getElementsByClassName("num-to-increase")[0].innerHTML = num;
 }
+
+async function getQuote() {
+    try {
+    let response = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
+    data = await response.json();
+    let quote = data[0]["quote"];
+    let author = data[0]["author"];
+    document.getElementById("bb-quote").innerHTML = quote;
+    document.getElementById("bb-author").innerHTML = "- " + author;
+    }
+    catch (e) {
+        document.getElementById("bb-quote").innerHTML = "API Error Caught: " + e;
+        document.getElementById("bb-author").innerHTML = null;
+    }
+}
