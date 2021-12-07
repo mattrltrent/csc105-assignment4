@@ -14,13 +14,28 @@ function calc() {
         }
     }
     else {
-        alert("Please enter something...");
+        alert("Good day, but please enter something...");
     }
 }
 
 function numberCalc() {
-    var num = parseInt(document.getElementsByClassName("num-to-increase")[0].innerHTML) + 1;
-    document.getElementsByClassName("num-to-increase")[0].innerHTML = num;
+    if (checkInp(document.getElementById("num_form").value)) {
+        let num = document.getElementById("num_form").value;
+        document.getElementsByClassName("num-to-increase")[0].innerHTML = num;
+    }
+    else {
+        document.getElementById("formID").reset();  
+    }
+}
+
+function checkInp(x)
+{
+    var regex=/^[0-9]+$/;
+    if (x.match(regex))
+    {
+        return true;
+    }
+    alert("Please enter a positive integer!")
 }
 
 async function getQuote() {

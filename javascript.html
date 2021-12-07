@@ -23,6 +23,7 @@
         <title>Skills</title>
     </head>
     <body>
+        <header></header>
         <section id="nav">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -85,13 +86,16 @@
         <section id="section1">
             <div id="title-scroll" class="section-div8-js mobile-size">
                 <div class="center bump-down">
-                    <form name="form">
                         <h1 class="title-js num-to-increase">10</h1>
-                        <button onclick="numberCalc()" type="button" class="btn
-                            btn-dark">Increment Counter</button>
-                    </form>
-                    <h4 class="title-sub-proj">Because increasing the value of a
-                        number is interesting?</h4>
+                        <form name="form_hold">
+                            <input id="num_form" class="form-control"
+                                placeholder="Enter New Number">
+                            <button onclick="numberCalc()" type="button"
+                                class="btn
+                                btn-dark">Update Value</button>
+                        </form>
+                    <h4 class="title-sub-proj">Because changing the value of a
+                        number is interesting. Yeah.</h4>
                 </div>
             </div>
         </section>
@@ -101,8 +105,8 @@
                     <h4 class="title-sub-proj">Breaking Bad Time!!</h4>
                     <p class="bb-quote" id="bb-quote"></p>
                     <p class="bb-quote" id="bb-author"></p>
-                    <button onclick="getQuote()" type="button" class="btn btn-dark push-down">Get A Breaking Bad Quote</button>
-
+                    <button onclick="getQuote()" type="button" class="btn
+                        btn-dark push-down">Get A Breaking Bad Quote</button>
                 </div>
             </div>
         </section>
@@ -110,7 +114,28 @@
             <div id="title-scroll" class="section-div9-proj mobile-size">
                 <div class="center bump-down">
                     <h4 class="title-sub-proj">So, how does this magic work?</h4>
-                    <p class="explanation-p">The blue section </p>
+                    <p class="explanation-p">The blue section works by getting
+                        the current time through a Date object. It then divides
+                        up the time into three different sections through a
+                        series of if/else statements (morning, afternoon, and
+                        evening). Finally, it takes the user’s input from the
+                        form to formulate an alert response combining both the
+                        time message and name of the user.
+                        <br>
+                        <br>
+                        The yellow section works by simply reassigning the integer
+                        value to the form value when the button is pressed. However, first, to make sure there are no errors, the form only accepts valid integers.
+                        <br>
+                        <br>
+                        The purple section works by using an API call to a free
+                        database of Breaking Bad quotes. It asynchronously waits
+                        for a response from their server, then assigns the
+                        response (after parsing the JSON) to a data variable.
+                        The quote and author are then derived from this data
+                        variable by referring to the first index (0) in the
+                        response, and by referring to the subsequent “author”
+                        and “quote” fields.
+                    </p>
                 </div>
             </div>
         </section>

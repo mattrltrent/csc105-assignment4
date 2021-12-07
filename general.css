@@ -461,5 +461,6 @@ table {
 
 .explanation-p {
     margin: 0 auto;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
+    max-width: 60vw;
 }
