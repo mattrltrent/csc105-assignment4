@@ -175,6 +175,7 @@ a, a:hover {
     padding-bottom: 50px;
     max-width: 40vw;
     color: white;
+    margin: 0 auto;
  }
 
  @media (max-width: 1020px) {
