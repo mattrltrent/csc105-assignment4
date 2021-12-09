@@ -465,3 +465,10 @@ table {
     padding-bottom: 120px;
     max-width: 60vw;
 }
+
+.star-img {
+    height: auto;
+    width: 20px;
+    margin: auto;
+    padding-bottom: 4px;
+}

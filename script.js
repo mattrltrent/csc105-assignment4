@@ -3,15 +3,15 @@ function calc() {
     if (name != null && name != "") {
         const dateObj = new Date();
         let time = dateObj.getHours();
-        if (time >= 18 && time < 7 || time == 0) {
-            alert("Good Evening, " + name + ".");
-        }
-        else if (time >= 7 && time < 11) {
-            alert("Good Morning, " + name + ".");
-        }
-        else if (time >= 11 && time < 18) {
-            alert("Good Afternoon, " + name + ".");
-        }
+            if (time >= 18 || time < 7 || time == 0) {
+                alert("Good Evening, " + name + ".");
+            }
+            else if (time >= 7 && time < 11) {
+                alert("Good Morning, " + name + ".");
+            }
+            else if (time >= 11 && time < 18) {
+                alert("Good Afternoon, " + name + ".");
+            }
     }
     else {
         alert("Good day, but please enter something...");
@@ -38,7 +38,7 @@ function checkInp(x)
     alert("Please enter a positive integer!")
 }
 
-async function getQuote() {
+async function getQuote() { // I knew how to do this already, but here's the comment. Also, the API came from this site: https://breakingbadquotes.xyz/
     try {
     let response = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
     data = await response.json();
@@ -48,7 +48,7 @@ async function getQuote() {
     document.getElementById("bb-author").innerHTML = "- " + author;
     }
     catch (e) {
-        document.getElementById("bb-quote").innerHTML = "API Error Caught: " + e;
+        document.getElementById("bb-quote").innerHTML = "API Error Caught (likely due to bad connection): " + e;
         document.getElementById("bb-author").innerHTML = null;
     }
 }
