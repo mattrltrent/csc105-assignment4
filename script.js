@@ -3,7 +3,7 @@ function calc() {
     if (name != null && name != "") {
         const dateObj = new Date();
         let time = dateObj.getHours();
-        if (time >= 18 && time < 7) {
+        if (time >= 18 && time < 7 || time == 0) {
             alert("Good Evening, " + name + ".");
         }
         else if (time >= 7 && time < 11) {
